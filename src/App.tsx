@@ -1,7 +1,5 @@
-import React from 'react';
-import { ILLogo } from './assets';
-import { GetStarted, Splash } from './pages';
 import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
 import Router from './router';
 
 export default function App() {
