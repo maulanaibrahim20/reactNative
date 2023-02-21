@@ -8,7 +8,7 @@ const HomeProfile = () => {
     <View style={styles.container}>
       <Image source={DummyUser} style={styles.avatar} />  
       <View>
-      <Text style={styles.name}>Shayna Melinda</Text>
+      <Text style={styles.name}>Maulana Ibrahim</Text>
       <Text style={styles.proffession}>Product Designer</Text>
       </View>
     </View>
