@@ -1,8 +1,13 @@
-import {StyleSheet, Text, View, ImageBackground} from 'react-native';
 import React from 'react';
-import {ILHospitalBG} from '../../assets';
-import {colors, fonts} from '../../utils';
+import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import {
+  DummyHospital1,
+  DummyHospital2,
+  DummyHospital3,
+  ILHospitalBG
+} from '../../assets';
 import { ListHospital } from '../../components';
+import { colors, fonts } from '../../utils';
 
 export default function Hospitals() {
   return (
@@ -12,12 +17,27 @@ export default function Hospitals() {
         <Text style={styles.desc}> 3 Tersedia</Text>
       </ImageBackground>
       <View style={styles.content}>
-        <ListHospital/>
-        <ListHospital/>
-        <ListHospital/>
+        <ListHospital
+          type="Rumah Sakit"
+          name="Citra Bunga Merdeka"
+          address="Jln Surya Sejahtera 20"
+          pic={DummyHospital1}
+        />
+        <ListHospital
+          type="Rumah Sakit Anak"
+          name="Happy Family & Kids"
+          address="Jln Surya Sejahtera 20"
+          pic={DummyHospital2}
+        />
+        <ListHospital
+          type="Rumah Sakit Jiwa"
+          name="Tingkat Paling Atas"
+          address="Jln Surya Sejahtera 20"
+          pic={DummyHospital3}
+        />
       </View>
     </View>
-  ); 
+  );
 }
 
 const styles = StyleSheet.create({
@@ -42,7 +62,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.secondary,
     flex: 1,
   },
-  content:{
+  content: {
     backgroundColor: colors.white,
     borderRadius: 20,
     flex: 1,
